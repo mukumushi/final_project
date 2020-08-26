@@ -216,6 +216,7 @@ main {
 @media (max-width: 500px) {
   .intro-img {
     width: 380px;
+    border: 2px solid blue;
   }
 }
 
