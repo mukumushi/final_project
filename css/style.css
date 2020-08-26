@@ -141,7 +141,7 @@ h1 {
 
    @media (max-height: 650px){ 
     .nav-links {
-      height: 30vh;
+      height: 40vh;
     }
    }
 
