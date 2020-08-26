@@ -1,0 +1,206 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  background-color: #F4F4F9;
+}
+  
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+ 
+
+/* 
+ __  .__   __. .___________..______        ______   
+|  | |  \ |  | |           ||   _  \      /  __  \  
+|  | |   \|  | `---|  |----`|  |_)  |    |  |  |  | 
+|  | |  . `  |     |  |     |      /     |  |  |  | 
+|  | |  |\   |     |  |     |  |\  \----.|  `--'  | 
+|__| |__| \__|     |__|     | _| `._____| \______/  
+(The fun animation)
+*/
+
+  .intro {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 1.3s ease 2.5s;
+    transform: translatey(0%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 9px 0px grey;
+    flex-direction: column;
+
+  }
+
+  .intro-open {
+    transform: translateY(-110%);
+    /* opacity: .50; */
+  }
+
+  .intro-img {
+    height: 150px;
+
+  }
+
+/* End Intro Styles */
+
+
+.site-container {
+  display: flex;
+  justify-content: space-between;
+}
+     
+
+/* 
+.__   __.      ___   ____    ____ 
+|  \ |  |     /   \  \   \  /   / 
+|   \|  |    /  ^  \  \   \/   /  
+|  . `  |   /  /_\  \  \      /   
+|  |\   |  /  _____  \  \    /    
+|__| \__| /__/     \__\  \__/     
+(The left-sidebar)
+*/
+
+  nav {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 20%;
+    max-width: 250px;
+    min-width: 220px;
+    min-height: 500px;
+    /* box-shadow: 2px 2px 9px 0px rgba(68,68,68,0.2); */
+    animation:  1s ease 2.3s slideInFromLeft;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .nav-intro {
+    height: 40vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+  }
+  .nav-intro img {
+    height: 55px;
+    margin: 40px 0 0 20px;
+  }
+  .nav-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  @media (max-width: 1160px){ 
+    .nav-intro h1 {
+      font-size: 27px;
+    }
+   }
+
+
+  .nav-links {
+    height: 50vh;
+  }
+
+  .nav-links ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nav-links ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nav-contact {
+    height: 10vh;
+  }
+/* End styles for nav */
+
+
+/* 
+.___  ___.      ___       __  .__   __. 
+|   \/   |     /   \     |  | |  \ |  | 
+|  \  /  |    /  ^  \    |  | |   \|  | 
+|  |\/|  |   /  /_\  \   |  | |  . `  | 
+|  |  |  |  /  _____  \  |  | |  |\   | 
+|__|  |__| /__/     \__\ |__| |__| \__|  */
+
+
+main {
+    /* border: 2px solid blueviolet;
+  box-sizing: border-box; */
+  height: 100vh;
+  width: 79%;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+    /* flex-direction: column; */
+  overflow: auto;
+}
+
+.card {
+  /* border: 2px solid blueviolet;
+  box-sizing: border-box; */
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 250px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+  padding-left: 50px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  
+}
+
+
+#project1 {
+  background-image: url('/images/projectcovers/1.jpg');
+
+}
+
+#project2 {
+  background-image: url('/images/projectcovers/2.jpg');
+}
+
+#project3 {
+  background-image: url('/images/projectcovers/3.jpg');
+}
+
+#project4 {
+  background-image: url('/images/projectcovers/4.jpg');
+}
