@@ -80,7 +80,7 @@ h1 {
     width: 20%;
     max-width: 250px;
     min-width: 220px;
-    min-height: 500px;
+    /* min-height: 500px; */
     /* box-shadow: 2px 2px 9px 0px rgba(68,68,68,0.2); */
     animation:  1s ease 2.3s slideInFromLeft;
     overflow: hidden;
@@ -130,7 +130,20 @@ h1 {
 
   .nav-links {
     height: 50vh;
+    min-height: 160px;
   }
+
+  @media (max-height: 720px){ 
+    .nav-links {
+      height: 45vh;
+    }
+   }
+
+   @media (max-height: 650px){ 
+    .nav-links {
+      height: 30vh;
+    }
+   }
 
   .nav-links ul{
     list-style: none;
