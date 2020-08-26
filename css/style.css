@@ -120,45 +120,6 @@ h1 {
     margin: 0;
   }
 
-  @media (max-width: 1160px){ 
-    .nav-intro h1 {
-      font-size: 27px;
-    }
-   }
-
-  .nav-links {
-    height: 50vh;
-    min-height: 160px;
-  }
-
-  @media (max-height: 720px){ 
-    .nav-links {
-      height: 45vh;
-    }
-   }
-
-   @media (max-height: 650px){ 
-    .nav-links {
-      height: 40vh;
-    }
-   }
-
-
-   @media (max-height: 600px){ 
-
-    .nav-intro {
-      height: 30vh;
-    }
-   
-    .nav-intro img {
-      height: 55px;
-      margin: 20px 0 0 20px;
-   }
-    .nav-links {
-      height: 20vh;
-    }
-   }
-
   .nav-links ul{
     list-style: none;
     padding-left: 0;
@@ -231,3 +192,57 @@ main {
 #project4 {
   background-image: url('../images/projectcovers/4.jpg');
 }
+
+
+.___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+|   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+|  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+|  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \    
+|  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |   
+|__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/    
+                                                                                                                            
+
+@media (max-width: 1160px){ 
+  .nav-intro h1 {
+    font-size: 27px;
+  }
+ }
+
+.nav-links {
+  height: 50vh;
+  min-height: 160px;
+}
+
+@media (max-width: 500px) {
+  .intro-img {
+    width: 380px;
+  }
+}
+
+@media (max-height: 720px){ 
+  .nav-links {
+    height: 45vh;
+  }
+ }
+
+ @media (max-height: 650px){ 
+  .nav-links {
+    height: 40vh;
+  }
+ }
+
+
+ @media (max-height: 600px){ 
+
+  .nav-intro {
+    height: 30vh;
+  }
+ 
+  .nav-intro img {
+    height: 55px;
+    margin: 20px 0 0 20px;
+ }
+  .nav-links {
+    height: 20vh;
+  }
+ }
