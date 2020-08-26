@@ -102,10 +102,11 @@ h1 {
 
   .nav-intro {
     height: 40vh;
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 2px solid blue;
 
     
   }
@@ -127,7 +128,18 @@ h1 {
     }
    }
 
+   @media (max-height: 600px){ 
+    .nav-intro {
+      height: 30vh;
+    }
+   
+    .nav-intro img {
+      height: 55px;
+      margin: 20px 0 0 20px;
+   }
 
+
+  }
   .nav-links {
     height: 50vh;
     min-height: 160px;
