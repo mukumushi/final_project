@@ -145,6 +145,13 @@ h1 {
     }
    }
 
+
+   @media (max-height: 600px){ 
+    .nav-links {
+      height: 30vh;
+    }
+   }
+
   .nav-links ul{
     list-style: none;
     padding-left: 0;
