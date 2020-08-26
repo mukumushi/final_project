@@ -189,18 +189,18 @@ main {
 
 
 #project1 {
-  background-image: url('images/projectcovers/1.jpg');
+  background-image: url('../images/projectcovers/1.jpg');
 
 }
 
 #project2 {
-  background-image: url('images/projectcovers/2.jpg');
+  background-image: url('../images/projectcovers/2.jpg');
 }
 
 #project3 {
-  background-image: url('images/projectcovers/3.jpg');
+  background-image: url('../images/projectcovers/3.jpg');
 }
 
 #project4 {
-  background-image: url('images/projectcovers/4.jpg');
+  background-image: url('../images/projectcovers/4.jpg');
 }
