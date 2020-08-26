@@ -128,18 +128,6 @@ h1 {
     }
    }
 
-   @media (max-height: 600px){ 
-    .nav-intro {
-      height: 30vh;
-    }
-   
-    .nav-intro img {
-      height: 55px;
-      margin: 20px 0 0 20px;
-   }
-
-
-  }
   .nav-links {
     height: 50vh;
     min-height: 160px;
@@ -159,6 +147,15 @@ h1 {
 
 
    @media (max-height: 600px){ 
+
+    .nav-intro {
+      height: 30vh;
+    }
+   
+    .nav-intro img {
+      height: 55px;
+      margin: 20px 0 0 20px;
+   }
     .nav-links {
       height: 20vh;
     }
