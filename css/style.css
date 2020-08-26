@@ -235,7 +235,7 @@ main {
   }
 }
 
-@media (max-height: 720px){ 
+@media (max-height: 750px){ 
   .nav-links {
     height: 45vh;
   }
@@ -251,7 +251,7 @@ main {
  }
 
 
- @media (max-height: 600px){ 
+ @media (max-height: 670px){ 
 
   .nav-intro {
     height: 27vh;
@@ -263,7 +263,7 @@ main {
     margin: 20px 0 0 20px;
  }
   .nav-links {
-    height: 20vh;
+    height: 35vh;
   }
  }
 
