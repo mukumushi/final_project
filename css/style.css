@@ -235,6 +235,22 @@ main {
     width: 320px;
     /* border: 2px solid purple; */
   }
+  nav {
+    min-width: 110px;
+  }
+  nav h1 {
+    display: none;
+  }
+  .nav-contact{
+    flex-direction: column;
+  }
+  .nav-contact svg {
+    margin: 5px;
+  }
+  .nav-links {
+    height: 30vh;
+  }
+
 }
 
 @media (max-height: 910px){ 
@@ -256,7 +272,31 @@ main {
   .nav-intro img {
     height: 55px;
     margin: 20px 0 0 20px;
-  }
+  }  
  }
+
+ @media (max-width:500px) {
+  .intro-img {
+    height: 100px;
+    width: 320px;
+    /* border: 2px solid purple; */
+  }
+  nav {
+    min-width: 110px;
+  }
+  nav h1 {
+    display: none;
+  }
+  .nav-contact{
+    flex-direction: column;
+  }
+  .nav-contact svg {
+    margin: 7px;
+  }
+
+  .nav-intro {
+    min-height: auto;
+  }
+}
 
  
