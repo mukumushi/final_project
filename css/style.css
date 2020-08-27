@@ -251,12 +251,12 @@ main {
  }
 
 
- @media (max-height: 670px){ 
+ /* @media (max-height: 670px){ 
 
   .nav-intro {
     height: 27vh;
   }
- 
+  */
 
   .nav-intro img {
     height: 55px;
