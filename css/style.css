@@ -106,7 +106,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
   }
   .nav-intro img {
     height: 55px;
@@ -238,6 +238,7 @@ main {
   }
   nav {
     min-width: 110px;
+    padding-left: 12px;
   }
   .nav-intro h1 {
     font-size: 18px;
@@ -249,10 +250,10 @@ main {
     flex-direction: column;
   }
   .nav-contact svg {
-    margin: 5px;
+    margin: 5px 5px 10px;
   }
   .nav-links {
-    height: 30vh;
+    height: 25vh;
   }
 
 }
