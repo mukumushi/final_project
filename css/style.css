@@ -149,7 +149,7 @@ h1 {
   .nav-contact {
     height: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     /* border: 2px solid purple; */
 
   }
@@ -198,28 +198,53 @@ main {
 
 }
 
+#portfolio {
+  width: 100%;
+}
+
 .card {
-  border: 2px solid blueviolet;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  /* flex-direction: column; */
-  justify-items: flex-start;
   height: 300px;
   width: 100%;
   max-width: 1500px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  padding-left: 50px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 50px; */
   
 }
+
  
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, .85);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  animation: appear .4s ease-in-out
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .card-content h3 {
   text-transform: uppercase;
-  color: blue;
   font-weight: 300;
   font-size: 14px;
   margin: 0;
@@ -235,31 +260,21 @@ main {
 
 .card-content button {
   border: 2px solid black;
-  border-radius: 5px;
-  /* background-color: rgba(0, 0, 0, 0); */
+  border-radius: 3px;
   background-color: black;
   color: white;
   margin-top: 15px;
-  /* text-transform: uppercase; */
-  padding: 5px 10px;
+  padding: 10px 15px;
   
 }
 
-#project1 {
-  background-image: url('../images/projectcovers/1.jpg');
-
+#about {
+  width: 100%;
+  height: 700px;
 }
 
-#project2 {
-  background-image: url('../images/projectcovers/2.jpg');
-}
-
-#project3 {
-  background-image: url('../images/projectcovers/3.jpg');
-}
-
-#project4 {
-  background-image: url('../images/projectcovers/4.jpg');
+.hidden {
+  display: none;
 }
 
 /* 
