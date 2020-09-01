@@ -4,28 +4,28 @@ let projects = [
       title: 'Hello Beautiful',
       href: "projects/quitstart.html",
       desc: 'a description goes here',
-      url: '../images/projectcovers/3.jpg'
+      url: 'images/projectcovers/3.jpg'
   },
   {
       type: "Kitchen",
       title: 'poster 2',
       href: "projects/2.html",
       desc: 'another description goes here',
-      url: '../images/projectcovers/2.jpg'
+      url: 'images/projectcovers/2.jpg'
   },
   {
      type: "Kids",
      title: 'poster 2',
      href: "projects/2.html",
      desc: 'just a short 1 liner',
-     url: '../images/projectcovers/4.jpg'
+     url: 'images/projectcovers/4.jpg'
 },
   {
       type: "Kids",
       title: 'poster 2',
       href: "projects/2.html",
       desc: 'another description goes here',
-      url: '../images/projectcovers/1.jpg'
+      url: 'images/projectcovers/1.jpg'
 },
 ]
 
