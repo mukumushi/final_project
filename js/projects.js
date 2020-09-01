@@ -1,14 +1,15 @@
-let projects = [
+export default let projects = [
     {
-        title: "Shoes",
-        src: "images/shoes.png",
-        price: 74.99,
-        onSale: false
+        type: "kids",
+        title: 'poster 1',
+        href: "projects/quitstart.html",
+        desc: 'a description goes here'
     },
     {
-        title: "Hat",
-        src: "images/hat.jpg",
-        price: 24.99,
-        onSale: false
+        type: "kids",
+        title: 'poster 2',
+        href: "projects/2.html",
+        desc: 'anoter description goes here'
     },
 ]
+

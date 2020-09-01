@@ -199,10 +199,12 @@ main {
 }
 
 .card {
-  /* border: 2px solid blueviolet;
-  box-sizing: border-box; */
+  border: 2px solid blueviolet;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
+  /* flex-direction: column; */
+  justify-items: flex-start;
   height: 300px;
   width: 100%;
   max-width: 1500px;
@@ -213,7 +215,35 @@ main {
   margin-bottom: 10px;
   
 }
+ 
 
+.card-content h3 {
+  text-transform: uppercase;
+  color: blue;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-content h2 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.card-content button {
+  border: 2px solid black;
+  border-radius: 5px;
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+  /* text-transform: uppercase; */
+  padding: 5px 10px;
+  
+}
 
 #project1 {
   background-image: url('../images/projectcovers/1.jpg');
