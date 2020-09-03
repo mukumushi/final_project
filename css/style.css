@@ -133,6 +133,10 @@ h1 {
     border-bottom: 1px solid lightgray;
   }
   
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+  }
 
   .nav-contact {
     height: auto;
