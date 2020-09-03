@@ -1,6 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -180,8 +180,8 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin-left: 10px;
-  overflow: auto;
-
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 
 }
 
