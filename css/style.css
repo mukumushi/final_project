@@ -1,6 +1,6 @@
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -104,6 +104,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     /* border: 2px solid blue; */
   }
   .nav-intro img {
@@ -250,7 +251,7 @@ main {
 .card-content button {
   border: none;
   border-radius: 3px;
-  background-color: black;
+  background-color: #023e4d;
   color: white;
   margin-top: 15px;
   padding: 10px 15px;
@@ -258,7 +259,7 @@ main {
 }
 
 .card-content button:hover {
-  background-color: #023e4d;
+  background-color: #000000;
 }
 
 #about {
