@@ -14,13 +14,6 @@ let posters = [
     link: "https://www.etsy.com/listing/848278536/kind-people-are-my-kind-of-people"
 },
 {
-    type: "Inspiration",
-    title: 'Daring Greatly',
-    desc: 'Quote from Theodore Roosevelt',
-    url: 'images/posters/daringgreatly.jpg',
-    link: "https://www.etsy.com/listing/839449356/daring-greatly-inspirational-poster-the"
-},
-{
   type: "Kids",
   title: 'You Are So Loved (Oh so very much)',
   desc: 'Nursery Room Printable',
@@ -54,6 +47,13 @@ let posters = [
  desc: 'I\'m a green cat.',
  url: 'images/posters/spottedcatgreen.jpg',
  link: "https://www.etsy.com/listing/842307166/spotted-cat-green-printable-poster-wall"
+},
+{
+  type: "Inspiration",
+  title: 'Daring Greatly',
+  desc: 'Quote from Theodore Roosevelt',
+  url: 'images/posters/daringgreatly.jpg',
+  link: "https://www.etsy.com/listing/839449356/daring-greatly-inspirational-poster-the"
 },
 {
   type: "Kids",
@@ -188,3 +188,23 @@ for(let i = 0; i < posters.length; i++) {
   })
  
 }
+
+// Scroll to specific values
+// scrollTo is the same
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});
+
+// Scroll certain amounts from current position 
+window.scrollBy({ 
+  top: 100, // could be negative value
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+// Scroll to a certain element
+document.querySelector('.hello').scrollIntoView({ 
+  behavior: 'smooth' 
+});
