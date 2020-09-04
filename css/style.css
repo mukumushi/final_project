@@ -75,7 +75,7 @@ h1 {
     width: 20%;
     max-width: 250px;
     min-width: 230px;
-    /* min-height: 500px; */
+    min-height: 375px;
     /* box-shadow: 2px 2px 9px 0px rgba(68,68,68,0.2); */
     animation:  1s ease 2.3s slideInFromLeft;
     overflow: hidden;
@@ -143,8 +143,8 @@ h1 {
     height: auto;
     display: flex;
     justify-content: start;
-    margin-bottom: 80px;
-    /* border: 2px solid purple; */
+    margin-bottom: 40px;
+    border: 2px solid green;
 
   }
 
@@ -177,12 +177,11 @@ main {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-wrap: wrap;
   margin-left: 10px;
-  overflow-y: auto;
-  /* change this to overflow-y: scroll */
+  overflow-y: scroll;
   scroll-behavior: smooth;
 
 }
@@ -311,6 +310,7 @@ main {
   .nav-contact{
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 80px;
   }
 
   .nav-contact svg {
