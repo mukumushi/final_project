@@ -1,3 +1,37 @@
+let portfolio = [
+  {
+      type: "Kids",
+      title: 'Wild Thing',
+      desc: 'You make my heart sing',
+      url: 'https://nickpassey.com/wp-content/uploads/2016/10/Featured.jpg',
+      link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+  },
+  {
+    type: "Kids",
+    title: 'Wild Thing',
+    desc: 'You make my heart sing',
+    url: 'https://m.media-amazon.com/images/I/8122xy3ZWDL._AC_SL1500_.jpg',
+    link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+},
+{
+  type: "Kids",
+  title: 'Wild Thing',
+  desc: 'You make my heart sing',
+  url: 'https://cdn.shopify.com/s/files/1/0386/5978/4844/products/IMG_0944_1024x1024@2x.jpg?v=1601147600',
+  link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+},
+{
+  type: "Kids",
+  title: 'Wild Thing',
+  desc: 'You make my heart sing',
+  url: 'https://i.pinimg.com/originals/29/28/05/292805b7fce7f82f6200e876ee5aaaee.gif',
+  link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+},
+
+]
+
+
+
 let posters = [
 {
     type: "Kids",
@@ -153,7 +187,7 @@ for(let i = 0; i < posters.length; i++) {
   let cardDiv = document.createElement('div')
   cardDiv.classList.add('card')
   cardDiv.style.backgroundImage = "url(" + posters[i].url + ")"
-  document.getElementById('portfolio').appendChild(cardDiv)
+  document.getElementById('posters').appendChild(cardDiv)
 
   let contentDiv = document.createElement('div')
   contentDiv.classList.add('card-content', 'hidden')
@@ -189,3 +223,44 @@ for(let i = 0; i < posters.length; i++) {
  
 }
 
+
+for(let i = 0; i < portfolio.length; i++) {
+  
+  let cardDiv = document.createElement('div')
+  cardDiv.classList.add('card-port')
+  cardDiv.style.backgroundImage = "url(" + portfolio[i].url + ")"
+  document.getElementById('portfolio').appendChild(cardDiv)
+
+  let contentDiv = document.createElement('div')
+  contentDiv.classList.add('card-content', 'hidden')
+ 
+  cardDiv.appendChild(contentDiv)
+
+  let h3 = document.createElement('h3')
+  h3.innerText = portfolio[i].type
+  contentDiv.appendChild(h3)
+
+  let h2 = document.createElement('h2')
+  h2.innerText = portfolio[i].title
+  contentDiv.appendChild(h2)
+
+  let desc = document.createElement('p')
+  desc.innerText = portfolio[i].desc
+  contentDiv.appendChild(desc)
+
+  let link = document.createElement('a')
+  link.href = portfolio[i].link
+  link.setAttribute('target', "_blank")
+  let button = document.createElement('button')
+  button.innerText = "View on Etsy"
+  link.appendChild(button)
+  contentDiv.appendChild(link)
+
+  cardDiv.addEventListener('mouseover', () => {
+    contentDiv.classList.remove('hidden')
+  })
+  cardDiv.addEventListener('mouseleave', () => {
+    contentDiv.classList.add('hidden')
+  })
+ 
+}

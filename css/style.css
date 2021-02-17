@@ -192,6 +192,12 @@ main {
   flex-wrap: wrap;
 }
 
+#posters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   box-sizing: border-box;
   height: 300px;
@@ -269,6 +275,21 @@ main {
 
 .hidden {
   display: none;
+}
+
+.card-port {
+  box-sizing: border-box;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 50px; */
+  
 }
 
 
