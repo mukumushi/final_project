@@ -1,24 +1,24 @@
 let portfolio = [
   {
-      type: "Kids",
-      title: 'Wild Thing',
-      desc: 'You make my heart sing',
-      url: 'https://nickpassey.com/wp-content/uploads/2016/10/Featured.jpg',
-      link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+      type: "Mobile App | Native iOS & Android",
+      title: 'QuitSTART',
+      desc: 'Smoking Cessation Aid for Teens',
+      url: 'http://trishwillard.com/img/tile_quitstart.jpg',
+      link: "#"
   },
   {
     type: "Kids",
     title: 'Wild Thing',
     desc: 'You make my heart sing',
-    url: 'https://m.media-amazon.com/images/I/8122xy3ZWDL._AC_SL1500_.jpg',
-    link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+    url: 'http://trishwillard.com/img/tile_positivespin.jpg',
+    link: "#"
 },
 {
   type: "Kids",
   title: 'Wild Thing',
   desc: 'You make my heart sing',
-  url: 'https://cdn.shopify.com/s/files/1/0386/5978/4844/products/IMG_0944_1024x1024@2x.jpg?v=1601147600',
-  link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
+  url: 'http://trishwillard.com/img/tile_timetek.jpg',
+  link: "#"
 },
 {
   type: "Kids",
