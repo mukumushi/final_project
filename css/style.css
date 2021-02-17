@@ -279,7 +279,7 @@ main {
 
 .card-port {
   box-sizing: border-box;
-  height: 425px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
   background-size: cover;
