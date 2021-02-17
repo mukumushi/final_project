@@ -2,31 +2,10 @@ let portfolio = [
   {
       type: "Mobile App | Native iOS & Android",
       title: 'QuitSTART',
-      desc: 'Smoking Cessation Aid for Teens',
+      desc: 'asdlf',
       url: 'http://trishwillard.com/img/tile_quitstart.jpg',
       link: "#"
   },
-  {
-    type: "Kids",
-    title: 'Wild Thing',
-    desc: 'You make my heart sing',
-    url: 'http://trishwillard.com/img/tile_positivespin.jpg',
-    link: "#"
-},
-{
-  type: "Kids",
-  title: 'Wild Thing',
-  desc: 'You make my heart sing',
-  url: 'http://trishwillard.com/img/tile_timetek.jpg',
-  link: "#"
-},
-{
-  type: "Kids",
-  title: 'Wild Thing',
-  desc: 'You make my heart sing',
-  url: 'https://i.pinimg.com/originals/29/28/05/292805b7fce7f82f6200e876ee5aaaee.gif',
-  link: "https://www.etsy.com/listing/842798798/wild-thing-printable-poster-wall-art"
-},
 
 ]
 
@@ -226,15 +205,15 @@ for(let i = 0; i < posters.length; i++) {
 
 for(let i = 0; i < portfolio.length; i++) {
   
-  let cardDiv = document.createElement('div')
-  cardDiv.classList.add('card-port')
-  cardDiv.style.backgroundImage = "url(" + portfolio[i].url + ")"
-  document.getElementById('portfolio').appendChild(cardDiv)
+  let portDiv = document.createElement('div')
+  portDiv.classList.add('card-port')
+  portDiv.style.backgroundImage = "url(" + portfolio[i].url + ")"
+  document.getElementById('portfolio').appendChild(portDiv)
 
   let contentDiv = document.createElement('div')
   contentDiv.classList.add('card-content', 'hidden')
  
-  cardDiv.appendChild(contentDiv)
+  portDiv.appendChild(contentDiv)
 
   let h3 = document.createElement('h3')
   h3.innerText = portfolio[i].type
@@ -256,10 +235,13 @@ for(let i = 0; i < portfolio.length; i++) {
   link.appendChild(button)
   contentDiv.appendChild(link)
 
-  cardDiv.addEventListener('mouseover', () => {
+  portDiv.addEventListener('mouseover', () => {
+    card-port.classList.add('expand')
+  })
+  portDiv.addEventListener('mouseover', () => {
     contentDiv.classList.remove('hidden')
   })
-  cardDiv.addEventListener('mouseleave', () => {
+  portDiv.addEventListener('mouseleave', () => {
     contentDiv.classList.add('hidden')
   })
  
