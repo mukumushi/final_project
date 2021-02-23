@@ -29,7 +29,11 @@ jQuery(document).ready(function($){
 			modalWindow.removeClass('visible');
 			modalWindow.addClass('closing');
 		}, delay);
-		transitionLayer.addClass('display')
+		setTimeout(function(){
+			transitionLayer.addClass('display');
+		}, 1000);
+
+		
 	},3000);
 
 	//close modal window
