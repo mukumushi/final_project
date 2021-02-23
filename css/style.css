@@ -59,7 +59,7 @@ h1 {
 
   .nav-intro {
     height: 40vh;
-    min-height: 250px;
+    min-height: 225px;
     display: flex;
     align-items: center;
     flex-direction: column;
