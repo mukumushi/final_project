@@ -154,13 +154,6 @@ let posters = [
 },
 ]
 
-// this controls the splash screen
-
-window.addEventListener('load', function(){
-  document.querySelector('.intro').classList.add('intro-open');
-});
-
-
 for(let i = 0; i < posters.length; i++) {
   
   let cardDiv = document.createElement('div')
