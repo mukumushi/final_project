@@ -1,3 +1,6 @@
+// THIS JS FILE IS FOR THE INTRODUCTION INK TRANSITION
+
+
 jQuery(document).ready(function($){
 	//cache some jQuery objects
 	var modalTrigger = $('.cd-modal-trigger'),
