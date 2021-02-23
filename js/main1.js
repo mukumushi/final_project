@@ -29,7 +29,8 @@ jQuery(document).ready(function($){
 			modalWindow.removeClass('visible');
 			modalWindow.addClass('closing');
 		}, delay);
-	},2000);
+		transitionLayer.addClass('display')
+	},3000);
 
 	//close modal window
 	modalWindow.on('click', '.modal-close', function(event){

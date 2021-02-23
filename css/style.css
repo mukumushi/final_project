@@ -15,8 +15,6 @@ h1 {
   font-size: 30px;
   font-weight: 400;
 }
- 
-
 
 .site-container {
   display: flex;
@@ -174,7 +172,6 @@ main {
   
 }
 
- 
 .card-content {
   display: flex;
   align-items: flex-start;
@@ -409,6 +406,10 @@ main {
   opacity: 1;
   visibility: visible;
 }
+.introduction-transition-layer.display {
+  display: none;
+}
+
 .introduction-transition-layer.opening .introduction-bg-layer {
   -webkit-animation: cd-sequence 0.8s steps(24);
   -moz-animation: cd-sequence 0.8s steps(24);
