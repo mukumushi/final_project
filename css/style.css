@@ -74,6 +74,7 @@ h1 {
 }
 .introduction p{
   font-size: 22px;
+  margin-top: 0px;
 }
 
 .introduction.visible {
