@@ -20,6 +20,204 @@ h1 {
   display: flex;
   justify-content: flex-start;
 }
+
+/* -------------
+---------------------------------
+----- INTRODUCTION INK TRANSITION 
+---------------------------------
+---------------- */
+.introduction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.introduction .introduction-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  /* padding: 3em 5%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.introduction img {
+  height: 150px;
+  width: auto;
+}
+
+.introduction.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.7s, visibility 0s;
+  -moz-transition: opacity 0.7s, visibility 0s;
+  transition: opacity 0.7s, visibility 0s;
+}
+.introduction.visible .modal-content {
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+}
+.introduction.visible .modal-close {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+@media only screen and (min-width: 1100px) {
+  .introduction .modal-content {
+    padding: 6em 5%;
+  }
+  .introduction .modal-close {
+    height: 60px;
+    width: 60px;
+  }
+  .introduction p {
+    font-size: 2rem;
+  }
+}
+
+.introduction-transition-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.introduction-transition-layer .introduction-bg-layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-2%);
+  -moz-transform: translateY(-50%) translateX(-2%);
+  -ms-transform: translateY(-50%) translateX(-2%);
+  -o-transform: translateY(-50%) translateX(-2%);
+  transform: translateY(-50%) translateX(-2%);
+  /* its dimentions will be overwritten using jQuery to proportionally fit the viewport */
+  height: 100%;
+  /* our sprite is composed of 25 frames */
+  width: 2500%;
+  background: url(../images/inktransition/ink-white.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.introduction-transition-layer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.introduction-transition-layer.display {
+  display: none;
+}
+
+.introduction-transition-layer.opening .introduction-bg-layer {
+  -webkit-animation: cd-sequence 0.8s steps(24);
+  -moz-animation: cd-sequence 0.8s steps(24);
+  animation: cd-sequence 0.8s steps(24);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.introduction-transition-layer.closing .introduction-bg-layer {
+  -webkit-animation: cd-sequence-reverse 0.8s steps(24);
+  -moz-animation: cd-sequence-reverse 0.8s steps(24);
+  animation: cd-sequence-reverse 0.8s steps(24);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.no-cssanimations .introduction-transition-layer {
+  display: none;
+}
+
+@-webkit-keyframes cd-sequence {
+  0% {
+    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+    -webkit-transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+    -webkit-transform: translateY(-50%) translateX(-98%);
+  }
+}
+@-moz-keyframes cd-sequence {
+  0% {
+    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+    -moz-transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+    -moz-transform: translateY(-50%) translateX(-98%);
+  }
+}
+@keyframes cd-sequence {
+  0% {
+    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+    -webkit-transform: translateY(-50%) translateX(-2%);
+    -moz-transform: translateY(-50%) translateX(-2%);
+    -ms-transform: translateY(-50%) translateX(-2%);
+    -o-transform: translateY(-50%) translateX(-2%);
+    transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+    -webkit-transform: translateY(-50%) translateX(-98%);
+    -moz-transform: translateY(-50%) translateX(-98%);
+    -ms-transform: translateY(-50%) translateX(-98%);
+    -o-transform: translateY(-50%) translateX(-98%);
+    transform: translateY(-50%) translateX(-98%);
+  }
+}
+@-webkit-keyframes cd-sequence-reverse {
+  0% {
+    -webkit-transform: translateY(-50%) translateX(-98%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) translateX(-2%);
+  }
+}
+@-moz-keyframes cd-sequence-reverse {
+  0% {
+    -moz-transform: translateY(-50%) translateX(-98%);
+  }
+  100% {
+    -moz-transform: translateY(-50%) translateX(-2%);
+  }
+}
+@keyframes cd-sequence-reverse {
+  0% {
+    -webkit-transform: translateY(-50%) translateX(-98%);
+    -moz-transform: translateY(-50%) translateX(-98%);
+    -ms-transform: translateY(-50%) translateX(-98%);
+    -o-transform: translateY(-50%) translateX(-98%);
+    transform: translateY(-50%) translateX(-98%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) translateX(-2%);
+    -moz-transform: translateY(-50%) translateX(-2%);
+    -ms-transform: translateY(-50%) translateX(-2%);
+    -o-transform: translateY(-50%) translateX(-2%);
+    transform: translateY(-50%) translateX(-2%);
+  }
+}
+
      
 /* -------------
 ---------------------------------
@@ -278,8 +476,8 @@ main {
   .intro-img {
     height: 100px;
     width: 320px;
-    /* border: 2px solid purple; */
   }
+
   nav {
     min-width: 100px;
     padding-left: 12px;
@@ -305,210 +503,7 @@ main {
   }
 }
 
-@media (max-width:400px) {
-  .intro-img {
-    height: 100px;
-    width: 320px;
-    border: 2px solid purple;
-  }
-}
 
-/* -------------
----------------------------------
------ INTRODUCTION INK TRANSITION 
----------------------------------
----------------- */
-.introduction {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-.introduction .introduction-content {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-  /* padding: 3em 5%; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.introduction img {
-  height: 150px;
-  width: auto;
-}
-
-.introduction.visible {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.7s, visibility 0s;
-  -moz-transition: opacity 0.7s, visibility 0s;
-  transition: opacity 0.7s, visibility 0s;
-}
-.introduction.visible .modal-content {
-  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
-  -webkit-overflow-scrolling: touch;
-}
-.introduction.visible .modal-close {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
-  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
-  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-@media only screen and (min-width: 1100px) {
-  .introduction .modal-content {
-    padding: 6em 5%;
-  }
-  .introduction .modal-close {
-    height: 60px;
-    width: 60px;
-  }
-  .introduction p {
-    font-size: 2rem;
-  }
-}
-
-.introduction-transition-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-}
-.introduction-transition-layer .introduction-bg-layer {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-2%);
-  -moz-transform: translateY(-50%) translateX(-2%);
-  -ms-transform: translateY(-50%) translateX(-2%);
-  -o-transform: translateY(-50%) translateX(-2%);
-  transform: translateY(-50%) translateX(-2%);
-  /* its dimentions will be overwritten using jQuery to proportionally fit the viewport */
-  height: 100%;
-  /* our sprite is composed of 25 frames */
-  width: 2500%;
-  background: url(../images/inktransition/ink-white.png) no-repeat 0 0;
-  background-size: 100% 100%;
-}
-.introduction-transition-layer.visible {
-  opacity: 1;
-  visibility: visible;
-}
-.introduction-transition-layer.display {
-  display: none;
-}
-
-.introduction-transition-layer.opening .introduction-bg-layer {
-  -webkit-animation: cd-sequence 0.8s steps(24);
-  -moz-animation: cd-sequence 0.8s steps(24);
-  animation: cd-sequence 0.8s steps(24);
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.introduction-transition-layer.closing .introduction-bg-layer {
-  -webkit-animation: cd-sequence-reverse 0.8s steps(24);
-  -moz-animation: cd-sequence-reverse 0.8s steps(24);
-  animation: cd-sequence-reverse 0.8s steps(24);
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.no-cssanimations .introduction-transition-layer {
-  display: none;
-}
-
-@-webkit-keyframes cd-sequence {
-  0% {
-    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
-    -webkit-transform: translateY(-50%) translateX(-2%);
-  }
-  100% {
-    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
-    -webkit-transform: translateY(-50%) translateX(-98%);
-  }
-}
-@-moz-keyframes cd-sequence {
-  0% {
-    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
-    -moz-transform: translateY(-50%) translateX(-2%);
-  }
-  100% {
-    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
-    -moz-transform: translateY(-50%) translateX(-98%);
-  }
-}
-@keyframes cd-sequence {
-  0% {
-    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
-    -webkit-transform: translateY(-50%) translateX(-2%);
-    -moz-transform: translateY(-50%) translateX(-2%);
-    -ms-transform: translateY(-50%) translateX(-2%);
-    -o-transform: translateY(-50%) translateX(-2%);
-    transform: translateY(-50%) translateX(-2%);
-  }
-  100% {
-    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
-    -webkit-transform: translateY(-50%) translateX(-98%);
-    -moz-transform: translateY(-50%) translateX(-98%);
-    -ms-transform: translateY(-50%) translateX(-98%);
-    -o-transform: translateY(-50%) translateX(-98%);
-    transform: translateY(-50%) translateX(-98%);
-  }
-}
-@-webkit-keyframes cd-sequence-reverse {
-  0% {
-    -webkit-transform: translateY(-50%) translateX(-98%);
-  }
-  100% {
-    -webkit-transform: translateY(-50%) translateX(-2%);
-  }
-}
-@-moz-keyframes cd-sequence-reverse {
-  0% {
-    -moz-transform: translateY(-50%) translateX(-98%);
-  }
-  100% {
-    -moz-transform: translateY(-50%) translateX(-2%);
-  }
-}
-@keyframes cd-sequence-reverse {
-  0% {
-    -webkit-transform: translateY(-50%) translateX(-98%);
-    -moz-transform: translateY(-50%) translateX(-98%);
-    -ms-transform: translateY(-50%) translateX(-98%);
-    -o-transform: translateY(-50%) translateX(-98%);
-    transform: translateY(-50%) translateX(-98%);
-  }
-  100% {
-    -webkit-transform: translateY(-50%) translateX(-2%);
-    -moz-transform: translateY(-50%) translateX(-2%);
-    -ms-transform: translateY(-50%) translateX(-2%);
-    -o-transform: translateY(-50%) translateX(-2%);
-    transform: translateY(-50%) translateX(-2%);
-  }
-}
 
 
  
