@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 	//open modal window
 	setTimeout(function() {	
 		transitionLayer.addClass('visible closing');
-		var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 300;
+		var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 100;
 		setTimeout(function(){
 			modalWindow.removeClass('visible');
 			modalWindow.addClass('closing');
@@ -34,7 +34,7 @@ jQuery(document).ready(function($){
 		}, 1000);
 
 		
-	},3000);
+	},2000);
 
 	//close modal window
 	modalWindow.on('click', '.modal-close', function(event){
