@@ -59,14 +59,14 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   opacity: 1;
-  animation: blackout .5s 2s ;
+  animation: blackout .5s 2.5s ;
   color: #fff;
 }
 
-@keyframes blackout {
+/* @keyframes blackout {
   from {opacity: 1;}
   to {opacity: 0;}
-}
+} */
 
 .introduction img {
   height: 180px;
