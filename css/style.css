@@ -43,16 +43,18 @@ h1 {
     flex-direction: column;
 
   }
+  
 
   .intro-open {
-    transform: translateY(-110%);
-    /* opacity: .50; */
+    transform: translateY(-100%); 
+    opacity: 1;
   }
 
   .intro-img {
     height: 150px;
 
   }
+
 
 /* End Intro Styles */
 
