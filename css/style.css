@@ -493,9 +493,9 @@ main {
 
 
 @media (max-width:500px) {
-  .intro-img {
-    height: 100px;
-    width: 320px;
+  .introduction img {
+    height: 120px;
+    width: auto;
   }
 
   nav {
