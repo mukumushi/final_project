@@ -3,7 +3,7 @@ let portfolio = [
       type: "Mobile App | Native iOS & Android",
       title: 'QuitSTART',
       desc: 'asdlf',
-      url: 'http://trishwillard.com/img/tile_quitstart.jpg',
+      url: 'images/projectcovers/tile_quitstart.jpg',
       link: "#"
   },
 
