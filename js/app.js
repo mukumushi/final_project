@@ -2,10 +2,17 @@ let portfolio = [
   {
       type: "Mobile App | Native iOS & Android",
       title: 'QuitSTART',
-      desc: 'asdlf',
+      desc: 'An app to help kids quit smoking',
       url: 'images/projectcovers/tile_quitstart.jpg',
-      link: "#"
+      link: "#stuff"
   },
+  {
+    type: "Responsive Website",
+    title: 'Positive Spin',
+    desc: 'A digital storytelling project from AIDS.gov',
+    url: 'images/projectcovers/tile_positivespin.jpg',
+    link: "#positivespin"
+},
 
 ]
 
@@ -204,7 +211,7 @@ for(let i = 0; i < portfolio.length; i++) {
   document.getElementById('portfolio').appendChild(portDiv)
 
   let contentDiv = document.createElement('div')
-  contentDiv.classList.add('card-content', 'hidden')
+  contentDiv.classList.add('card-content-port', 'hidden')
  
   portDiv.appendChild(contentDiv)
 
@@ -222,20 +229,20 @@ for(let i = 0; i < portfolio.length; i++) {
 
   let link = document.createElement('a')
   link.href = portfolio[i].link
-  link.setAttribute('target', "_blank")
+
   let button = document.createElement('button')
-  button.innerText = "View on Etsy"
+  button.innerText = "Case Study"
   link.appendChild(button)
   contentDiv.appendChild(link)
 
-  portDiv.addEventListener('mouseover', () => {
-    card-port.classList.add('expand')
-  })
   portDiv.addEventListener('mouseover', () => {
     contentDiv.classList.remove('hidden')
   })
   portDiv.addEventListener('mouseleave', () => {
     contentDiv.classList.add('hidden')
   })
+  
  
 }
+
+

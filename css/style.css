@@ -262,100 +262,101 @@ h1 {
 ---------------------------------
 ---------------- */
 
-  nav {
-    /* border: 2px solid black; */
-    box-sizing: border-box;
-    background-color: #fff;
-    width: 20%;
-    max-width: 250px;
-    min-width: 230px;
-    min-height: 375px;
-    /* box-shadow: 2px 2px 9px 0px rgba(68,68,68,0.2); */
-    animation:  1s ease 2.3s slideInFromLeft;
-    overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+nav {
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 20%;
+  max-width: 250px;
+  min-width: 230px;
+  min-height: 375px;
+  /* box-shadow: 2px 2px 9px 0px rgba(68,68,68,0.2); */
+  animation:  1s ease 2.3s slideInFromLeft;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  .nav-intro {
-    height: 40vh;
-    min-height: 225px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 2px solid blue; */
-  }
-  .nav-intro img {
-    height: 55px;
-    margin: 40px 0 0 20px;
-  }
-  .nav-intro h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.4em;
-    font-size: 28px;
-    margin: 0;
-  }
-  .nav-links {
-    height: 40vh;
-    min-height: 195px;
-    margin-top: 30px;
-    /* border: 2px solid gold; */
-  }
-  .nav-links ul{
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-  }
+.nav-intro {
+  height: 40vh;
+  min-height: 225px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid blue; */
+}
+.nav-intro img {
+  height: 55px;
+  margin: 40px 0 0 20px;
+}
+.nav-intro h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-size: 26px;
+  margin: 0;
+}
+.nav-links {
+  height: 40vh;
+  min-height: 195px;
+  margin-top: 30px;
+  /* border: 2px solid gold; */
+}
+.nav-links ul{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
 
-  .nav-links ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-  }
+.nav-links ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
 
-  .nav-contact {
-    height: auto;
-    display: flex;
-    justify-content: start;
-    margin-bottom: 40px;
-    /* border: 2px solid green; */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
 
-  }
+.nav-contact {
+  height: auto;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px;
+  /* border: 2px solid green; */
 
-  .nav-contact a {
-    flex-basis: 30%;
-  }
+}
 
- svg {
-    height: 15px;
-    fill: darkgray;
-    /* border: 2px solid green; */
-  }
+.nav-contact a {
+  flex-basis: 30%;
+}
 
-  .nav-contact svg:hover {
-    fill: black;
-  }
+svg {
+  height: 15px;
+  fill: darkgray;
+  /* border: 2px solid green; */
+}
+
+.nav-contact svg:hover {
+  fill: black;
+}
 /* End styles for nav */
 
 
@@ -415,8 +416,9 @@ main {
   flex-direction: column;
   padding: 10px 40px;
   background-color: rgba(255, 255, 255, .9);
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
+  margin: 30px;
   overflow: hidden;
   animation: appear .4s ease-in-out
 }
@@ -433,47 +435,17 @@ main {
 }
 
 
-.card-content h3 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0;
-}
-
-.card-content h2 {
-  margin: 0;
-}
-
-.card-content p {
-  margin: 0;
-}
-
-.card-content button {
-  border: none;
-  border-radius: 3px;
-  background-color: #023e4d;
-  color: white;
-  margin-top: 15px;
-  padding: 10px 15px;
-  
-}
-
-.card-content button:hover {
-  background-color: #000000;
-}
 
 #about {
   width: 100%;
   height: 700px;
 }
 
-.hidden {
-  display: none;
-}
+
 
 .card-port {
   box-sizing: border-box;
-  height: 400px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
   background-size: cover;
@@ -486,10 +458,56 @@ main {
   
 }
 
-.expand {
-  height: 100vh;
+.card-content-port {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, .9);
+  height: 80%;
+  width: 80%;
+  margin: 30px;
+  overflow: hidden;
+  animation: appear .4s ease-in-out
 }
 
+.card-content h3, .card-content-port h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  color: #023e4d;
+}
+
+.card-content h2, .card-content-port h2 {
+  margin: 0;
+}
+
+.card-content p, .card-content-port p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.card-content button, .card-content-port button {
+  border: none;
+  border-radius: 3px;
+  background-color: #000000;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 15px;
+  
+}
+
+.card-content button:hover, .card-content-port button:hover {
+  background-color: #023e4d;
+}
+
+
+.hidden {
+  display: none;
+}
 
 /* -------------
 ---------------------------------
@@ -507,6 +525,10 @@ main {
   .card {
     width: 98%;
   }
+  .card-content-port {
+    width: 80%;
+  }
+
 }
 
 
@@ -539,6 +561,7 @@ main {
     height: 30vh;
     margin-top: 5px;
   }
+  
 }
 
 
