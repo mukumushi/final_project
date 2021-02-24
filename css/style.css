@@ -756,6 +756,42 @@ main {
   -o-transform: scale(1);
   transform: scale(1);
 }
+
+.modal-content-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+}
+
+.modal-pic-side {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  margin-right: 10px;
+  padding-top: 30px;
+  /* border: 2px solid salmon; */
+}
+.modal-pic {
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+.modal-text-side {
+  width: 60%;
+  /* border: 2px solid purple; */
+}
+
+@media (max-width:860px) {
+  .modal-pic {
+    height: 250px;
+    border-radius: 50%;
+  
+  }
+} 
+
 @media only screen and (min-width: 1100px) {
   .cd-modal .modal-content {
     padding: 6em 5%;
