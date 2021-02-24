@@ -298,7 +298,7 @@ h1 {
   }
   .nav-links {
     height: 40vh;
-    min-height: 160px;
+    min-height: 195px;
     margin-top: 30px;
     /* border: 2px solid gold; */
   }
@@ -683,13 +683,14 @@ main {
 }
 .cd-modal .modal-content {
   overflow-y: auto;
-  padding: 3em 5%;
+  padding: 2.5em 5%;
   color: #e4dcca;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-modal h1 {
   text-align: center;
+  margin-bottom: 10px;
 }
 .cd-modal h1::after {
   /* ink/brush separation */
@@ -714,7 +715,7 @@ main {
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.07) url(../images/inktransition/cd-icon-close.svg) no-repeat center center;
+  background: rgba(255, 255, 255, 0.1) url(../images/inktransition/cd-icon-close.svg) no-repeat center center;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
