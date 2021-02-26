@@ -421,7 +421,12 @@ main {
 .medium-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 20px
+  padding: 20px;
+}
+
+.medium-widget-article__content {
+  margin-right: 20px !important;
+
 }
 .card {
   box-sizing: border-box;
@@ -928,7 +933,7 @@ main {
   }
 
   .medium-widget-article__image img {
-    width: 80%;
+    width: 80% !important;
   }
 }
 
