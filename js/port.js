@@ -4,7 +4,7 @@ let portfolio = [
       title: 'QuitSTART',
       desc: 'An app to help kids quit smoking',
       url: 'images/projectcovers/tile_quitstart.jpg',
-      link: "#stuff"
+      link: "#quitstart"
   },
   {
     type: "Responsive Website",
