@@ -511,59 +511,65 @@ main {
 ---------------------------------
 ---------------- */
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  transition: opacity 600ms;
+.modal {
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  transition: all .4s;
+  overflow: scroll;
 }
-.overlay:target {
+
+.modal:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  width: 90%;
+.modal__content {
   position: relative;
-  transition: all 5s ease-in-out;
+  height: 100%;
+  width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+  border: 2px solid salmon;
 }
 
-.popup .close {
+.modal__close {
+  /* 'X' icon */
   position: absolute;
+  z-index: 1;
   top: 20px;
-  right: 30px;
-  transition: all 600ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
+  right: 5%;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .2) url(../images/inktransition/cd-icon-close.svg) no-repeat center center;
+  /* image replacement */
+  /* overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s; */
 }
 
-
-
+.modal__close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 .hidden {
