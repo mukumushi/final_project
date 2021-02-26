@@ -421,7 +421,10 @@ main {
 .medium-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 20px;
+}
+
+#medium-widget {
+  padding: 20px !important;
 }
 
 .medium-widget-article__content {
