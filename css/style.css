@@ -767,7 +767,7 @@ main {
 .cd-modal .modal-content {
   overflow-y: auto;
   padding: 2.5em 5%;
-  color: #c7bccc;
+  color: #f6f6f6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
