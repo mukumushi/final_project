@@ -923,6 +923,13 @@ main {
     width: 80%;
   }
 
+  .medium-widget-article__grid {
+    flex-direction: column;
+  }
+
+  .medium-widget-article__image img {
+    width: 80%;
+  }
 }
 
 
