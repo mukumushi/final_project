@@ -624,8 +624,8 @@ main {
 }
 .modal_img {
   /* border: 2px solid green; */
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-top: 50px;
 }
 .modal_img img {
