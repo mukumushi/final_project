@@ -521,6 +521,7 @@ main {
 
 .card-content h2, .card-content-port h2 {
   margin: 0;
+  line-height: 1.2em;
 }
 
 .card-content p, .card-content-port p {
