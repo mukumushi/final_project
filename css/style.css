@@ -649,7 +649,7 @@ iframe {
 .caption {
   font-size: 13px;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5px 20px;
   display: block;
   background-color: #F4F4F9;
   width: 100%;
