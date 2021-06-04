@@ -967,6 +967,7 @@ iframe {
   }
   .card-content-port {
     width: 80%;
+    padding: 15px;
   }
 
   .medium-widget-article__grid {
