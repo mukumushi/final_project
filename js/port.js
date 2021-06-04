@@ -14,10 +14,17 @@ let portfolio = [
     link: "#positivespin"
 },
 {
-  type: "Moble App | Prototype",
+  type: "Mobile App | Prototype",
   title: 'TimeTek',
   desc: 'A timesheet app prototype',
   url: 'images/projectcovers/tile_timetek.jpg',
+  link: "#timetek"
+},
+{
+  type: "Mobile App | Phone Gap",
+  title: 'The National Foster Care & Adoption Directory App',
+  desc: 'An app for prospective parents and caseworkers',
+  url: 'images/projectcovers/tile_nfcad.jpg',
   link: "#timetek"
 },
 

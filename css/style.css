@@ -620,10 +620,10 @@ main {
 }
 
 .modal_section {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .modal_img {
-  margin: 50px;
+  margin: 40px 0 0 0;
 }
 .modal_img img {
   width: 100%;
@@ -637,6 +637,9 @@ main {
   height: auto!important;
 }
 
+iframe {
+  width: 100%;
+}
 
 .hidden {
   display: none;
@@ -644,8 +647,7 @@ main {
 
 .caption {
   font-size: 13px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 5px;
   display: block;
   background-color: #F4F4F9;
