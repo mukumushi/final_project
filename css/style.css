@@ -624,13 +624,12 @@ main {
 }
 .modal_img {
   margin: 50px;
-  display: flex;
-  justify-content: center;
-  border: 2px solid springgreen;
 }
 .modal_img img {
   width: 100%;
   height: auto!important;
+  display: block;
+  margin: auto;
 }
 
 .modal_img .half {
