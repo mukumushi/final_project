@@ -483,7 +483,7 @@ main {
 .card-port {
   box-sizing: border-box;
   height: 350px;
-  width: 100%;
+  width: 49.5%;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -947,6 +947,12 @@ iframe {
 ----- MEDIA QUERIES 
 ---------------------------------
 ---------------- */
+
+@media (max-width:1247px) {
+  .card-port {
+    width: 100%;
+  }
+}
                                                                                                                             
 @media (max-width:1150px) {
   .card {

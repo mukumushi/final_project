@@ -27,7 +27,34 @@ let portfolio = [
   url: 'images/projectcovers/tile_nfcad.jpg',
   link: "#timetek"
 },
-
+{
+  type: "Mobile App | Prototype",
+  title: 'TimeTek',
+  desc: 'A timesheet app prototype',
+  url: 'images/projectcovers/tile_rideshare.jpg',
+  link: "#timetek"
+},
+{
+  type: "Mobile App | Phone Gap",
+  title: 'The National Foster Care & Adoption Directory App',
+  desc: 'An app for prospective parents and caseworkers',
+  url: 'images/projectcovers/tile_mobileinfographic.jpg',
+  link: "#timetek"
+},
+{
+  type: "Mobile App | Prototype",
+  title: 'TimeTek',
+  desc: 'A timesheet app prototype',
+  url: 'images/projectcovers/tile_nehep.jpg',
+  link: "#timetek"
+},
+{
+  type: "Mobile App | Phone Gap",
+  title: 'The National Foster Care & Adoption Directory App',
+  desc: 'An app for prospective parents and caseworkers',
+  url: 'images/projectcovers/tile_print.jpg',
+  link: "#timetek"
+},
 ]
 
 
