@@ -13,6 +13,13 @@ let portfolio = [
     url: 'images/projectcovers/tile_positivespin.jpg',
     link: "#positivespin"
 },
+{
+  type: "Moble App | Prototype",
+  title: 'TimeTek',
+  desc: 'A timesheet app prototype',
+  url: 'images/projectcovers/tile_timetek.jpg',
+  link: "#timetek"
+},
 
 ]
 
