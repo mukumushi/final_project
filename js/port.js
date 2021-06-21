@@ -25,14 +25,14 @@ let portfolio = [
   title: 'The National Foster Care & Adoption Directory App',
   desc: 'An app for prospective parents and caseworkers',
   url: 'images/projectcovers/tile_nfcad.jpg',
-  link: "#timetek"
+  link: "#nfcad"
 },
 {
-  type: "Mobile App | Prototype",
-  title: 'TimeTek',
-  desc: 'A timesheet app prototype',
+  type: "Mobile App | UI Design",
+  title: '511NY Rideshare',
+  desc: 'An App for Commuters',
   url: 'images/projectcovers/tile_rideshare.jpg',
-  link: "#timetek"
+  link: "#rideshare"
 },
 {
   type: "Mobile App | Phone Gap",
